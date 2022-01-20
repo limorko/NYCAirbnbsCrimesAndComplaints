@@ -12,7 +12,7 @@ As a final project for the course Applied Linux Programming and Scripting, Fall 
 To backup my assumption, I took advantage of three data sets: the historic data for NYPD complaints, the service requests to 311 (phone number for filing complaints) from 2010 to 2021 and the Airbnb listings for New York City. To get to my conclusion, I started by selecting specific crimes and specific complaints that can be linked to the presence of Airbnbs in a neighborhood. Some examples of crimes that I considered relevant to my first hypothesis are: petit larceny, harrassment, assault and dangerous drugs. Examples of complaints that I considered relevant to my second hypothesis are: noise, illegal parking and unsanitary conditions. The full lists can be found at offenses.txt and complaints.txt respectively. Those two text files were pre-prepared and will be utilized in two of the scripts needed to get to the conclusion, therefore they are already present in the “makefile” ‘s directory. I selected the specific key words for complaints and crimes by finding the top 20 reported crimes / types of complaint and checking whether each one was relevant to the hypothesis.
       
 ------------------------------------------------------
-**WALK THROUGH THE CODE**
+**CODE WALKTHROUGH**
 
 **First Step - *AbnbDateLatLong.awk*, *911DateLatLong.py* and *311DateZip.py***
 
@@ -43,8 +43,10 @@ Step five is a comparison between the deltas computed for the Airbnb data and cr
 
 The last step is the graphing of the two comparisons between the increase of Airbnbs per capita, per zip code from 2015 to 2019 and the increase in crimes/complaints reporting per capita, per zip code from 2015 to 2019. Using matplotlib.pyplot, I wrote two Python scripts that load all Airbnb deltas per capita to lists of x-axis coordinates and all crimes/complaints deltas per capita to lists of y-axis coordinates. The graphs will be composed of circumferences of different colors, each representing a different zip code and of a different size, related to the size of the population in that zip code. The two final outputs of the entire project will be pdfs containing graphs that plot the relationships between Airbnbs, Crimes and Service Requests: “AbnbsCrimes.pdf” and “AbnbsComplaints.pdf”.
         
-        
-**My Conclusion**
+--------------------------------------
+**CONCLUSION**
+
+**My Conclusions**
 
 Unfortunately, I was not able to prove either hypothesis through this data and therefore the graphs don’t project the trend that I was expecting. However, I think this may be caused by the fact that Airbnbs in New York City represent a low percentage of the total housing, are very spread out and are relatively still new to the market. For this reason, it is hard to clearly show the correlation with crimes and complaints, even though it is not so strange to think that there might be a relationship between complaints about noise/loud music/partying and the presence of Airbnbs. Perhaps, it will be possible to prove this hypothesis in another ten years, when the Airbnbs will have grown in number and popularity. 
 
