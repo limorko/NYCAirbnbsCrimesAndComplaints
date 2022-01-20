@@ -19,7 +19,7 @@ The third step consist of calculating the increase in number of crimes, complain
 Fourth Step - zipDeltaPop.py
 The fourth step reads in the population per zip data from uszipsv1.4.txt to compute the number of Airbnbs, 911 offenses and 311 complaints per capita. It inputs three files created in the previous step and outputs zip|deltaPerCapita|population for each file.
         
-Fifth Step -
+Fifth Step - compare.py
 Step five is a comparison between the deltas computed for the Airbnb data and crime deltas (as well as complaint deltas). The Python file reads in the output of the fourth step and outputs zip|population|deltaAbnb|deltaCrimeORComplaint to “zipAbnbCrime.txt” and “zipAbnbComplaint.txt”.
         
 Sixth Step -
