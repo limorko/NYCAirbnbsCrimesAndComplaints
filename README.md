@@ -16,7 +16,7 @@ As the next step, all latitude and longitudes of the Airbnbs and 911 calls need 
 Third Step - computeDeltas.py and AbnbComputeDeltas.py
 The third step consist of calculating the increase in number of crimes, complaints and Airbnbs per zip code from 2015 to 2019. I chose these two years specifically because 2015 represents the “peak year” for Airbnb and 2019 is the most recent “normal year” that 2015 can be compared to (2020 and 2021 were deeply influenced by the Covid-19 factor).  “computeDeltas.py” computes the delta complaints and the delta crimes for years 2019 and 2015, outputting zip|delta to “deltaComplaints2015-2019.txt” and “deltaCrimes2015-2019”. AbnbComputeDeltas.py does a very similar thing and outputs zip|delta for each Airbnb to “deltaAbnbs2015-2019.txt”. Both scripts use two dictionaries, for years 2019 and 2015, to keep track of all zipcodes and the number of times they appear in each data set. The programs then create a third dictionary that contains the delta of dictionaries 2019 and 2015.
         
-Fourth Step - 
+Fourth Step - zipDeltaPop.py
 The fourth step reads in the population per zip data from uszipsv1.4.txt to compute the number of Airbnbs, 911 offenses and 311 complaints per capita. It inputs three files created in the previous step and outputs zip|deltaPerCapita|population for each file.
         
 Fifth Step -
